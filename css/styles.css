@@ -1,7 +1,195 @@
+/***FONT SIZING***
+http://type-scale.com/?size=16&scale=1.125&text=A%20Visual%20Type%20Scale&webfont=%27PT+Sans%27&font-family=%27PT%20Sans%27,%20sans-serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=
+***/
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
+  font-family: 'PT Serif', Georgia, Palatino, 'Palatino Linotype', serif;
+
+  font-size: 1em; /*16px*/
+  line-height: 1.5;
+  color: #5E5E5E;
+  background-color: #f5f5f5;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'PT Serif', Georgia, Palatino, 'Palatino Linotype', serif;
+  font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
+
+  color: #4A4A4A;
+  margin: 0;
+}
+
+h1 {
+  padding: 1em 0 1em;
+  font-size: 1.602em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.424em;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.266em;
+  line-height: 1.3;
+}
+
+header {
+  padding-bottom: 2.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav {
+  margin-bottom: 3.5em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: block;
+  background-color: #fefefe;
+  margin-bottom: 0.7em;
+}
+
+nav ul li a {
+  display: block;
+  font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  text-decoration: none;
+  padding: 1.1em;
+}
+
+nav ul li a:hover {
+  background-color: #4A4A4A;
+  color: #FAFAFA;
+}
+
+.banner {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  max-width: 80%;
+}
+
+.intro {
+  font-size: 1.125em;
+}
+
+main {
+  background-color: #FAFAFA;
+  padding-bottom: 2.5em;
+}
+
+#portfolio {
+  padding-top: 3em;
+}
+
+#portfolio h2,
+#contact h2 {
+  text-transform: uppercase;
+  padding-bottom: 2em;
+  letter-spacing: .01em;
+}
+
+.project {
+  margin-bottom: 2.5em;
+}
+
+.project img {
+  margin-bottom: 2.5em;
+}
+
+.project p {
+  padding-left: 1.424em;
+  padding-right: 1.424em;
+}
+
+footer {
+  margin-top: 4em;
+}
+
+#contact {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 4em;
+}
+
+#contact p {
+  font-size: 1.125em;
+}
+
+address {
+  font-style: normal;
+}
+
+address span {
+  font-weight: 700;
+  padding-left: 0.5em;
+}
+
+address span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address span a:hover {
+  border-bottom: 2px solid #626F7E;
+  color: #626F7E;
+}
+
+.credit {
+  border-top: 1px solid #DCDCDC;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em 1em;
+  font-size: 0.889em;
+  font-weight: 700;
+  font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
+}
+
+.credit p {
+  float: left;
+}
+
+.credit p + p {
+  float: right;
+  text-transform: uppercase;
+}
+
+.credit p a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5em;
+}
+
+.credit p a:hover {
+  background-color: #5E5E5E;
+  color: #FAFAFA;
+}
+
+.clearfix {
+  content: " ";
+  display: table;
+  clear: both;
 }
