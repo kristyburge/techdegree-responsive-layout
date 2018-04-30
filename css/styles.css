@@ -7,7 +7,8 @@ http://type-scale.com/?size=16&scale=1.125&text=A%20Visual%20Type%20Scale&webfon
 }
 
 body {
-  font-family: 'PT Serif', Georgia, Palatino, 'Palatino Linotype', serif;
+  /* font-family: 'PT Serif', Georgia, Palatino, 'Palatino Linotype', serif; */
+  font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
 
   font-size: 1em; /*16px*/
   line-height: 1.5;
@@ -18,7 +19,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
-
   color: #4A4A4A;
   margin: 0;
 }
@@ -30,8 +30,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.424em;
-  line-height: 1.2;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 h3 {
@@ -53,7 +53,7 @@ img {
 }
 
 nav {
-  margin-bottom: 3.5em;
+  margin-bottom: 2.5em;
 }
 
 nav ul {
@@ -65,7 +65,7 @@ nav ul li {
   list-style: none;
   display: block;
   background-color: #fefefe;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.3em;
 }
 
 nav ul li a {
@@ -75,7 +75,7 @@ nav ul li a {
   text-transform: uppercase;
   color: #4A4A4A;
   text-decoration: none;
-  padding: 1.1em;
+  padding: 0.5em;
 }
 
 nav ul li a:hover {
@@ -89,16 +89,13 @@ nav ul li a:hover {
 }
 
 .profile-pic {
+  margin: 0;
   max-width: 80%;
-}
-
-.intro {
-  font-size: 1.125em;
 }
 
 main {
   background-color: #FAFAFA;
-  padding-bottom: 2.5em;
+  padding-bottom: 1.5em;
 }
 
 #portfolio {
@@ -108,21 +105,21 @@ main {
 #portfolio h2,
 #contact h2 {
   text-transform: uppercase;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
   letter-spacing: .01em;
 }
 
 .project {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
 }
 
 .project img {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
 }
 
 .project p {
-  padding-left: 1.424em;
-  padding-right: 1.424em;
+  margin-top: 0.5em;
+  margin-bottom: 2.3em;
 }
 
 footer {
@@ -135,8 +132,8 @@ footer {
   margin-bottom: 4em;
 }
 
-#contact p {
-  font-size: 1.125em;
+#contact h2 {
+  padding-bottom: 1em;
 }
 
 address {
