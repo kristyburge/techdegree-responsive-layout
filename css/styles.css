@@ -7,9 +7,7 @@ http://type-scale.com/?size=16&scale=1.125&text=A%20Visual%20Type%20Scale&webfon
 }
 
 body {
-  /* font-family: 'PT Serif', Georgia, Palatino, 'Palatino Linotype', serif; */
-  font-family: 'PT Sans', Tahoma, Verdana, 'Trebuchet MS', sans-serif;
-
+  font-family: 'PT Serif', Georgia, Palatino, 'Palatino Linotype', serif;
   font-size: 1em; /*16px*/
   line-height: 1.5;
   color: #5E5E5E;
@@ -32,6 +30,10 @@ h1 {
 h2 {
   font-size: 1em;
   line-height: 1.4;
+  text-transform: uppercase;
+  padding-bottom: 3em;
+  letter-spacing: .01em;
+  color: #2572AA;
 }
 
 h3 {
@@ -97,15 +99,9 @@ main {
   padding-bottom: 1.5em;
 }
 
-#portfolio {
+#portfolio,
+#skills {
   padding-top: 3em;
-}
-
-#portfolio h2,
-#contact h2 {
-  text-transform: uppercase;
-  padding-bottom: 3em;
-  letter-spacing: .01em;
 }
 
 .project {
@@ -119,17 +115,50 @@ main {
 .project p {
   margin-top: 0.5em;
   margin-bottom: 2.3em;
+  padding: 0 2em;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 4em;
+}
+
+.skills {
+  margin: 0 1.5625em;
+  padding: 0;
+}
+
+.skills li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #444;
+  background-color: #333;
+  box-shadow: 3px 2px 3px #cdcdcd;
+  color: #fff;
+  text-shadow: 0 -1px 0 #565656;
+  padding: 1em;
+  width: 80%;
+  font-size: 1.266em;
+  margin-bottom: 0.3em;
+}
+
+.skills li:hover {
+  opacity: 0.9;
+}
+
+.skills i {
+  padding-right: 0.5em;
 }
 
 footer {
   margin-top: 4em;
 }
 
-
 #contact h2 {
   padding-bottom: 1em;
 }
-
 
 address {
   font-style: normal;
@@ -163,6 +192,7 @@ address span a:hover {
 
 .credit p {
   float: left;
+  color: #9b9c9c;
 }
 
 .credit p + p {
@@ -244,6 +274,12 @@ MEDIA QUERIES
     height: 3.75em;
   }
 
+
+  .skills li {
+    float: left;
+    width: 25%;
+  }
+
   .get-in-touch {
     font-size: 1.266em;
     max-width: 75%;
@@ -264,8 +300,16 @@ MEDIA QUERIES
     text-align: right;
   }
 
-}
+  .footer-nav ul li a {
+    color: #9b9c9c;
+  }
 
+  .footer-nav ul li a:hover {
+    background-color: #9b9c9c;
+    color: #FAFAFA;
+  }
+
+}
 
 
 /*** DESKTOP STYLES ***/
