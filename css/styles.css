@@ -52,7 +52,7 @@ img {
   margin: 0 auto;
 }
 
-nav {
+.main-header {
   margin-bottom: 2.5em;
 }
 
@@ -88,10 +88,9 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
-.profile-pic {
+/* .profile-pic {
   margin: 0;
-  max-width: 80%;
-}
+} */
 
 main {
   background-color: #FAFAFA;
@@ -263,6 +262,54 @@ MEDIA QUERIES
   .footer-nav {
     display: block;
     text-align: right;
+  }
+
+}
+
+
+
+/*** DESKTOP STYLES ***/
+@media (min-width: 1024px) {
+
+  .main-header {
+    margin-top: 2.5em;
+    margin-bottom: 5em;
+    min-height: 3.125rem;
+  }
+
+  .logo {
+    float: left;
+    padding: 1rem 0;
+  }
+
+  .main-nav {
+    float: right;
+    margin-right: 24px;
+  }
+
+  .intro {
+    font-size: 1.424em;
+    width: 60%;
+    padding-right: 6rem;
+    padding-left: 0;
+  }
+
+  .profile-pic {
+    width: 40%;
+    padding-right: 24px;
+  }
+
+  .project {
+    width: 33%;
+    padding: 0.5em;
+  }
+
+  .get-in-touch {
+    width: 50%;
+  }
+
+  footer {
+    padding-bottom: 0;
   }
 
 }
