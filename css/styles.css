@@ -63,7 +63,6 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  display: block;
   background-color: #fefefe;
   margin-bottom: 0.3em;
 }
@@ -76,6 +75,7 @@ nav ul li a {
   color: #4A4A4A;
   text-decoration: none;
   padding: 0.5em;
+  transition: all 0.2s;
 }
 
 nav ul li a:hover {
@@ -127,9 +127,7 @@ footer {
 }
 
 #contact {
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-bottom: 4em;
+  margin: 0 1em 4em;
 }
 
 #contact h2 {
@@ -178,6 +176,7 @@ address span a:hover {
   text-decoration: none;
   color: inherit;
   padding: 0.5em;
+  transition: all 0.2s;
 }
 
 .credit p a:hover {
@@ -185,8 +184,82 @@ address span a:hover {
   color: #FAFAFA;
 }
 
+.footer-nav {
+  display: none;
+}
+
 .clearfix {
   content: " ";
   display: table;
   clear: both;
+}
+
+/*************
+MEDIA QUERIES
+*************/
+
+/*** TABLET STYLES ***/
+@media (min-width: 768px) {
+
+  nav ul {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  nav ul li {
+    float: left;
+    background-color: transparent;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    padding: 1em 1.5em;
+  }
+
+  .profile-pic {
+    float: right;
+    width: 33%;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .intro {
+    float: left;
+    width: 67%;
+    margin-top: 0;
+    padding: 0 1em;
+    font-size: 1.125em;
+    text-align: left;
+  }
+
+  .project {
+    float: left;
+    width: 50%;
+    padding: 0.5em;
+  }
+
+  #contact {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #contact p {
+    font-size: 1.266em;
+  }
+
+  .credit p a {
+    display: none;
+  }
+
+  footer {
+    padding-bottom: 2em;
+  }
+
+  .footer-nav {
+    display: block;
+    text-align: right;
+  }
+
 }
